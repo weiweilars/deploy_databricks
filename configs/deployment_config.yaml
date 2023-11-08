@@ -1,0 +1,24 @@
+Name: HuggingFaceH4/zephyr-7b-alpha
+Description: Deployment of the zephyr-7b-alpha model 
+Deployment: 
+  model_download_path: ~/.cache/models
+  artifact_path: llama_deployment_uc
+  unity_catalog_uri: databricks-uc
+  unity_catalog: capgemini
+  unity_catalog_schema: chatbot 
+  prompt_example: Hello, how are you?
+  output_example: How can I help you. 
+  parameters: 
+    temperature: 0.1
+    max_token: 150
+
+pip_requirements: 
+  - pandas==1.4.4
+  - torch==2.1.0
+  - transformers==4.34.0
+  - accelerate==0.23.0
+  - bitsandbytes==0.41.1
+  - tiktoken==0.5.1
+
+Secrete:
+  huggingface_hub: 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

@@ -2,6 +2,7 @@ python: "3.10"
 build_dependencies:
   - pip
 dependencies:
+  - grpcio >= 1.48.1 
   - mlflow
   - langchain
   - transformers
